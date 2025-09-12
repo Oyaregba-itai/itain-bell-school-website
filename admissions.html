@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Admissions • Itain‑Bell Schools</title>
+<meta name="description" content="Itain‑Bell Schools in Oregun, Ikeja, Lagos — Creche, Nursery & Primary." />
+<link rel="icon" href="assets/images/images.jpeg" type="image/jpeg" />
+<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="Itain‑Bell Schools - Home">
+  <img src="assets/images/images.jpeg" alt="Itain‑Bell Schools Logo" class="logo-img" style="height:48px;width:auto;vertical-align:middle;" />
+      <div class="name">Itain‑Bell Schools</div>
+    </a>
+    <nav>
+      <button class="hamburger" aria-label="Toggle menu">☰</button>
+      <div class="menu" role="menubar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="academics.html">Academics</a>
+        <a href="admissions.html">Admissions</a>
+        <a href="facilities.html">Facilities</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="news.html">News & Events</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </div>
+</header>
+<main class="container">
+
+<section class="section">
+  <span class="kicker">Apply</span>
+  <h2>Admissions for 2025/2026 Are Open</h2>
+  <div class="banner">
+    <span>We accept applications year‑round, subject to available places.</span>
+    <a class="btn" href="#form" style="margin-left:auto">Start Application</a>
+  </div>
+</section>
+
+<section class="section">
+  <div class="grid-2">
+    <div class="card">
+      <h3>Admission Process</h3>
+      <ol>
+        <li>Complete the application form.</li>
+        <li>Submit birth certificate and immunization record.</li>
+        <li>Schedule an assessment/meet‑and‑greet.</li>
+        <li>Offer & enrollment (fees and uniform).</li>
+      </ol>
+      <div class="notice"><strong>Fees:</strong> Tuition ranges ₦50,000–₦150,000 per term (indicative). Contact the school for current fees.</div>
+    </div>
+    <div class="card" id="form">
+      <h3>Application Form (Demo)</h3>
+      <form class="form" onsubmit="handleSubmit(event)">
+        <div class="row">
+          <input class="input" required placeholder="Pupil's First Name" />
+          <input class="input" required placeholder="Pupil's Last Name" />
+        </div>
+        <div class="row">
+          <select class="input" required>
+            <option value="">Programme</option>
+            <option>Creche</option>
+            <option>Nursery</option>
+            <option>Primary</option>
+          </select>
+          <input class="input" type="date" required placeholder="Date of Birth" />
+        </div>
+        <input class="input" required placeholder="Parent/Guardian Name" />
+        <div class="row">
+          <input class="input" type="tel" required placeholder="Phone Number" />
+          <input class="input" type="email" required placeholder="Email Address" />
+        </div>
+        <textarea class="textarea" placeholder="Tell us about your child (interests, prior school, allergies)"></textarea>
+        <div class="form hint">Submitting this demo form will not send data to a server.</div>
+        <button class="btn" type="submit">Submit Application</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="footer">
+  <div class="container">
+    <div class="cols">
+      <div>
+  <div class="brand"><img src="assets/images/images.jpeg" alt="Itain‑Bell Schools Logo" class="logo-img" style="height:32px;width:auto;vertical-align:middle;" /><div class="name">Itain‑Bell Schools</div></div>
+        <p>High‑quality, child‑centered education with a British–Nigerian curriculum and Montessori approach for early years.</p>
+        <div class="banner"><strong>Address:</strong>&nbsp;7 Mustapha Street, Off Olayiwola, Oregun, Ikeja, Lagos</div>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="admissions.html">Apply Now</a></li>
+          <li><a href="news.html">School Calendar</a></li>
+          <li><a href="facilities.html">Facilities</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Programs</h4>
+        <ul>
+          <li>Creche (3–18 months)</li>
+          <li>Nursery & Early Years</li>
+          <li>Primary (Key Stages)</li>
+          <li>After‑School & Clubs</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>Tel: 0818‑890‑2673</li>
+          <li>Tel: 0803‑714‑4152</li>
+          <li>Email: info@itainbellschools.com</li>
+        </ul>
+      </div>
+    </div>
+    <div class="bar">© <span id="year"></span> Itain‑Bell Schools — All rights reserved.</div>
+  </div>
+</footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+<script src="assets/js/script.js"></script>
+</body>
+</html>
