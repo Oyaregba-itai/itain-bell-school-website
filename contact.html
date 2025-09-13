@@ -38,8 +38,8 @@
     <div class="card">
       <h3>Contact Details</h3>
       <p><strong>Address:</strong> 7 Mustapha Street, Off Olayiwola, Oregun, Ikeja, Lagos</p>
-      <p><strong>Phone:</strong> 0818‑890‑2673, 0803‑714‑4152</p>
-      <p><strong>Email:</strong> info@itainbellschools.com</p>
+  <p><strong>Phone:</strong> 0818‑890‑2673 (WhatsApp), 0803‑714‑4152, 0802‑142‑1858 (Phone calls)</p>
+  <p><strong>Email:</strong> Itainbell.schools@gmail.com</p>
       <div class="notice">Office hours: Mon–Fri, 8:00am–4:00pm</div>
       <div class="social-links" style="margin-top:1.2rem;">
         <h4>Connect with us:</h4>
@@ -57,16 +57,25 @@
       </div>
     </div>
     <div class="card">
-      <h3>Send a Message (Demo)</h3>
-      <form class="form" onsubmit="handleSubmit(event)">
-        <div class="row">
-          <input class="input" type="text" placeholder="Full Name" required />
-          <input class="input" type="email" placeholder="Email Address" required />
+      <h3>Send a Message </h3>
+  <form class="form" action="https://formspree.io/f/myzdvvkz" method="POST">
+  <input type="hidden" name="_subject" value="Contact Request" />
+  <div class="row">
+          <input class="input" type="text" name="name" placeholder="Full Name" required />
+          <input class="input" type="email" name="email" placeholder="Email Address" required />
         </div>
-        <input class="input" type="tel" placeholder="Phone Number" />
-        <textarea class="textarea" placeholder="Your message"></textarea>
+        <input class="input" type="tel" name="phone" placeholder="Phone Number" />
+        <textarea class="textarea" name="message" placeholder="Your message" required></textarea>
         <button class="btn" type="submit">Send Message</button>
       </form>
+      <div style="margin-top:1rem;color:#16a34a;display:none" id="formspree-success">Thank you! Your message has been sent.</div>
+      <script>
+      document.querySelector('form[action^="https://formspree.io/"]').addEventListener('submit', function(e) {
+        setTimeout(function(){
+          document.getElementById('formspree-success').style.display = 'block';
+        }, 1200);
+      });
+      </script>
     </div>
   </div>
 </section>
@@ -111,7 +120,7 @@
         <ul>
           <li>Tel: 0818‑890‑2673</li>
           <li>Tel: 0803‑714‑4152</li>
-          <li>Email: info@itainbellschools.com</li>
+          <li>Email: Itainbell.schools@gmail.com</li>
         </ul>
       </div>
     </div>

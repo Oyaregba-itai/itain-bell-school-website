@@ -54,27 +54,27 @@
     </div>
     <div class="card" id="form">
       <h3>Application Form (Demo)</h3>
-      <form class="form" onsubmit="handleSubmit(event)">
-        <div class="row">
-          <input class="input" required placeholder="Pupil's First Name" />
-          <input class="input" required placeholder="Pupil's Last Name" />
+      <form class="form" action="https://formspree.io/f/myzdvvkz" method="POST">
+  <input type="hidden" name="_subject" value="Admission Request" />
+  <div class="row">
+          <input class="input" name="pupil_first_name" required placeholder="Pupil's First Name" />
+          <input class="input" name="pupil_last_name" required placeholder="Pupil's Last Name" />
         </div>
         <div class="row">
-          <select class="input" required>
+          <select class="input" name="programme" required>
             <option value="">Programme</option>
             <option>Creche</option>
             <option>Nursery</option>
             <option>Primary</option>
           </select>
-          <input class="input" type="date" required placeholder="Date of Birth" />
+          <input class="input" name="dob" type="date" required placeholder="Date of Birth" />
         </div>
-        <input class="input" required placeholder="Parent/Guardian Name" />
+        <input class="input" name="parent_name" required placeholder="Parent/Guardian Name" />
         <div class="row">
-          <input class="input" type="tel" required placeholder="Phone Number" />
-          <input class="input" type="email" required placeholder="Email Address" />
+          <input class="input" name="phone" type="tel" required placeholder="Phone Number" />
+          <input class="input" name="email" type="email" required placeholder="Email Address" />
         </div>
-        <textarea class="textarea" placeholder="Tell us about your child (interests, prior school, allergies)"></textarea>
-        <div class="form hint">Submitting this demo form will not send data to a server.</div>
+        <textarea class="textarea" name="about_child" placeholder="Tell us about your child (interests, prior school, allergies)"></textarea>
         <button class="btn" type="submit">Submit Application</button>
       </form>
     </div>
@@ -113,7 +113,7 @@
         <ul>
           <li>Tel: 0818‑890‑2673</li>
           <li>Tel: 0803‑714‑4152</li>
-          <li>Email: info@itainbellschools.com</li>
+          <li>Email: Itainbell.schools@gmail.com</li>
         </ul>
       </div>
     </div>
